@@ -1,5 +1,12 @@
+import EventsList from "../../components/EvenstList/EventsList";
+import styles from "./EventBoard.module.scss";
 const EventBoard = () => {
-  return <h1>Events</h1>;
+  return (
+    <section className={styles.eventBoard}>
+      <h1>Events</h1>
+      <EventsList />
+    </section>
+  );
 };
 
 export default EventBoard;

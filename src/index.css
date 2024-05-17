@@ -11,3 +11,13 @@ body {
 
   border: 1px solid #000;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #348cff;
+  text-decoration: none;
+}
