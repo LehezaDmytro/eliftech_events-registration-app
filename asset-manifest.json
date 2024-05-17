@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/eliftech_events-registration-app/static/css/main.ea85aaed.css",
-    "main.js": "/eliftech_events-registration-app/static/js/main.e9909522.js",
+    "main.css": "/eliftech_events-registration-app/static/css/main.6095c849.css",
+    "main.js": "/eliftech_events-registration-app/static/js/main.e28ec633.js",
     "index.html": "/eliftech_events-registration-app/index.html",
-    "main.ea85aaed.css.map": "/eliftech_events-registration-app/static/css/main.ea85aaed.css.map",
-    "main.e9909522.js.map": "/eliftech_events-registration-app/static/js/main.e9909522.js.map"
+    "main.6095c849.css.map": "/eliftech_events-registration-app/static/css/main.6095c849.css.map",
+    "main.e28ec633.js.map": "/eliftech_events-registration-app/static/js/main.e28ec633.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea85aaed.css",
-    "static/js/main.e9909522.js"
+    "static/css/main.6095c849.css",
+    "static/js/main.e28ec633.js"
   ]
 }
