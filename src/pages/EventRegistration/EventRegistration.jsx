@@ -1,31 +1,17 @@
-import styles from "./EventRegistration.module.scss";
+import { useParams } from "react-router-dom";
+import { addNewVisitor } from "../../api/events";
+import RegistrationForm from "../../components/RegistrationForm/RegistrationForm";
 
 const EventRegistration = () => {
+  const { eventId } = useParams();
+  const onHandleSubmit = (newVisitorData) => {
+    addNewVisitor(eventId, newVisitorData);
+  };
+
   return (
     <section>
       <h2>Event Registration</h2>
-      <form className={styles.form} action="">
-        <label htmlFor="name">Full name</label>
-        <input type="text" id="name" />
-        <label htmlFor="email">Email</label>
-        <input type="text" id="email" />
-        <label htmlFor="date">Date of birth</label>
-        <input type="date" id="date" />
-        <p>Where did you hear about this event?</p>
-        <label>
-          <input type="radio" name="source" value="social media" />
-          Social media
-        </label>
-        <label>
-          <input type="radio" name="source" value="friends" />
-          Friends
-        </label>
-        <label>
-          <input type="radio" name="source" value="found myself" />
-          Found myself
-        </label>
-        <button type="submit">Register</button>
-      </form>
+      <RegistrationForm onHandleSubmit={onHandleSubmit} />
     </section>
   );
 };
