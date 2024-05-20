@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./RegistrationForm.module.scss";
 
 const RegistrationForm = ({ onHandleSubmit }) => {
+  const navigate = useNavigate();
+
   const submitForm = (e) => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -10,7 +13,10 @@ const RegistrationForm = ({ onHandleSubmit }) => {
       birthDate: form.elements.date.value,
       source: form.elements.source.value,
     });
+
+    alert("You are successfully registered as a participant in this event!");
     form.reset();
+    navigate("/", { replace: true });
   };
 
   return (

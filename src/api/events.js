@@ -7,9 +7,11 @@ const eventsInstance = axios.create({
   baseURL,
 });
 
-export const getEvents = async () => {
+export const getEvents = async (page = 1, limit = 6) => {
   try {
-    const { data } = await eventsInstance.get(`/events`);
+    const { data } = await eventsInstance.get(
+      `/events/?page=${page}&limit=${limit}`
+    );
     return data;
   } catch (error) {
     throw error;
